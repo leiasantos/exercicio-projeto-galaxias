@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+:root{
+    --cor-main:#1E1E1E;
+    --cor-card:#202024;
+    --cor-titulo-principal: #02799D;
+    --cor-subtitulos:#E1E1E6;
+    --cor-textos:#C4C4CC;
+}
+
+body{
+    background-color: var(--cor-main);
+    display: grid;
+    justify-content: center;
+    padding: 72px 104px;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    color: var(--cor-titulo-principal);
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 72px;
+}
+
+header p{
+   font-weight: 600; 
+   font-size: 32px;
+   line-height: 40px;
+   color: var(--cor-textos);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    gap: 48px 60px;
+    overflow: hidden;
+    margin-top: 62px;
+   
+}
+
+.card{
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    border: 1px solid var(--cor-textos);
+    }
+
+.card h2{
+    color: var(--cor-subtitulos);
+    font-size: 36px;
+    font-weight: 700;
+    padding: 24px 32px;
+}
+
+.card p{
+    color: var(--cor-textos);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 24px 32px 32px;
+}
+
+.card img{
+    border-radius: 8px 8px 0 0 ;
+}
